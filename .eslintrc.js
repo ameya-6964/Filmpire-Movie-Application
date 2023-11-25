@@ -20,6 +20,7 @@ module.exports = {
     quotes: ["error", "double"],
     "comma-dangle": "off",
     "no-console": "off",
+    "no-unused-vars": "warn",
     "react/function-component-definition": [
       2,
       {
