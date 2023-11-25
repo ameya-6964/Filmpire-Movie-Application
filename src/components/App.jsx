@@ -8,12 +8,12 @@ import { Actors, Navbar, Movies, Profile, MovieInformation } from "./index";
 
 const App = () => {
   const classes = useStyles();
-  console.log(classes);
   return (
     <div className={classes.root}>
       <CssBaseline />
       <Navbar />
-      <main>
+      <main className={classes.content}>
+        <div className={classes.toolbar} />
         <Switch>
           <Route exact path="/">
             <MovieInformation />
