@@ -21,6 +21,7 @@ module.exports = {
     "comma-dangle": "off",
     "no-console": "off",
     "no-unused-vars": "warn",
+    "import/no-cycle": "off",
     "operator-linebreak": ["off", "none"],
     "react/function-component-definition": [
       2,
