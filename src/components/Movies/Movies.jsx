@@ -1,11 +1,20 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+
+import {
+  Box,
+  CircularProgress,
+  useMediaQuery,
+  Typography,
+} from "@mui/material";
+import { useSelector } from "react-redux";
+import { useGetMoviesQuery } from "../../services/TMDB";
 
 const Movies = () => {
-  const movie = useParams();
+  const { data } = useGetMoviesQuery();
+  console.log(data);
   return (
     <div>
-      <h1>Movies {movie.id}</h1>
+      <h1>Hello</h1>
     </div>
   );
 };
