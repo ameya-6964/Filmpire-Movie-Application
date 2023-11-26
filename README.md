@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Technology Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Filmpire is built using a cutting-edge technology stack that ensures a seamless and enjoyable movie-watching experience. Here's a breakdown of the key technologies employed in the development of Filmpire:
 
-## Available Scripts
+## 1. React
 
-In the project directory, you can run:
+[React](https://reactjs.org/) serves as the foundational JavaScript library for building user interfaces. It allows for the creation of reusable UI components, ensuring a modular and efficient development process. React's declarative approach to building UIs enhances the overall performance of Filmpire.
 
-### `npm start`
+## 2. Redux/Toolkit
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Redux](https://redux.js.org/) is employed to manage the state of the application in a predictable and centralized manner. Additionally, [Redux Toolkit](https://redux-toolkit.js.org/) is utilized to streamline the Redux setup and reduce boilerplate code. This ensures efficient state management, making it easier to handle complex application states.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 3. TMDB API
 
-### `npm test`
+Filmpire leverages the [TMDB (The Movie Database) API](https://www.themoviedb.org/documentation/api) to access a wealth of movie-related data. This includes information such as movie details, cast and crew, reviews, and more. By integrating with TMDB API, Filmpire stays up-to-date with the latest movie releases and provides comprehensive details to users.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 4. Material-UI
 
-### `npm run build`
+[Material-UI](https://material-ui.com/) is utilized to enhance the visual appeal and user experience of Filmpire. This React UI framework provides a set of pre-designed, customizable components based on Google's Material Design. The integration of Material-UI ensures a polished and consistent look and feel throughout the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 5. npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[npm](https://www.npmjs.com/) (Node Package Manager) is used for package management and dependency installation. It simplifies the process of managing and updating the various libraries and tools that Filmpire relies on.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 6. Git
 
-### `npm run eject`
+[Git](https://git-scm.com/) is employed for version control, enabling collaboration among developers and maintaining a history of code changes. Filmpire's source code is hosted on GitHub, allowing for easy sharing, collaboration, and version tracking.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Conclusion
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Filmpire's technology stack is a powerful combination of frontend libraries, state management tools, and API integration, ensuring a smooth and feature-rich movie-watching experience. The use of modern technologies contributes to the app's performance, scalability, and maintainability, making Filmpire a standout application in the cinematic realm.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Key Features:
 
-## Learn More
+### 1. Intuitive UI
+Immerse yourself in a modern and intuitive user interface that enhances your movie-browsing experience. Filmpire is designed to make navigation seamless, allowing you to effortlessly discover the latest and greatest in cinema.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 2. Dark and Light Modes
+Tailor your experience with the option to switch between dark and light modes. Whether you prefer a cinematic night mode or a bright and vibrant interface, Filmpire adapts to your viewing preferences.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Search Functionality
+Finding your favorite movies is a breeze with Filmpire's powerful search functionality. Quickly locate the films you love or explore new ones with ease, thanks to the efficient search feature.
 
-### Code Splitting
+### 4. Material-UI Integration
+Filmpire is not just functional but also visually polished, courtesy of its integration with Material-UI components. Enjoy a refined and cohesive look and feel that enhances your overall interaction with the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📷 Images Of The Project:
 
-### Analyzing the Bundle Size
+### 1. Home Page (Light Mode) 
+![Screenshot 2023-11-27 022633](https://github.com/ameya-6964/Filmpire-Movie-Application/assets/104457295/69ef1336-4185-4434-953b-b0d88731b7d2)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 2. Home Page (Dark Mode) 
+![Screenshot 2023-11-27 022647](https://github.com/ameya-6964/Filmpire-Movie-Application/assets/104457295/ddc65157-c870-4ba7-82f3-a62a0d23d5ad)
 
-### Making a Progressive Web App
+### 3. Movie Page (Light Mode) 
+![Screenshot 2023-11-27 022744](https://github.com/ameya-6964/Filmpire-Movie-Application/assets/104457295/d10790c3-00db-4eb4-8e69-9321599f6983)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 4. Movie Page (Dark Mode) 
+![Screenshot 2023-11-27 022757](https://github.com/ameya-6964/Filmpire-Movie-Application/assets/104457295/6401d742-5c3a-4734-b1ad-879ca70834fb)
 
-### Advanced Configuration
+### 5. Actor Page (Light Mode) 
+![Screenshot 2023-11-27 022827](https://github.com/ameya-6964/Filmpire-Movie-Application/assets/104457295/43e4f788-21ad-4b22-9b3b-bf44be6cdefe)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 6. Actor Page (Dark Mode) 
+![Screenshot 2023-11-27 022838](https://github.com/ameya-6964/Filmpire-Movie-Application/assets/104457295/e60defe2-ab96-4df0-ab5d-f96ddd80862b)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
