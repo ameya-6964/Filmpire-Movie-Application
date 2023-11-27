@@ -32,6 +32,7 @@ const Search = () => {
         onChange={(e) => setQuery(e.target.value)}
         variant="standard"
         color="info"
+        autoComplete="off"
         InputProps={{
           className: classes.input,
           startAdornment: (
