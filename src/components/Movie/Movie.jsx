@@ -21,7 +21,7 @@ const Movie = ({ movie, i }) => {
             <img
               alt={movie.title}
               className={classes.image}
-              src="https://via.placeholder.com/400"
+              src="https://placehold.co/300x500"
             />
           )}
           <Typography className={classes.title} variant="h5">
