@@ -1,11 +1,13 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { userSelector } from "../../features/auth";
 
 const Profile = () => {
-  const profile = useParams();
+  const { user } = useSelector(userSelector);
+
   return (
     <div>
-      <h1>Profile {profile.id}</h1>
+      <h1>Profile - {user.username}</h1>
     </div>
   );
 };
