@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 import React, { useState, useEffect } from "react";
 import { TextField, InputAdornment } from "@mui/material";
 import { Search as SearchIcon } from "@mui/icons-material";
@@ -19,7 +20,7 @@ const Search = () => {
     }
   };
 
-  if (location.pathname !== "/") {
+  if (location.pathname !== "/" && location.pathname !== "/approved") {
     return null;
   }
 

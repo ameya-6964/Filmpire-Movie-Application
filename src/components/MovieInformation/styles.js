@@ -18,6 +18,8 @@ export default makeStyles((theme) => ({
       margin: "0 auto",
       width: "50%",
       // height: '350px',
+      display: "flex",
+      marginBottom: "30px",
     },
     [theme.breakpoints.down("sm")]: {
       margin: "0 auto",

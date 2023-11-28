@@ -74,7 +74,12 @@ const MovieInformation = () => {
   const isMovieWatchlisted = true;
   return (
     <Grid container className={classes.containerSpaceAround}>
-      <Grid item xs={12} lg={4}>
+      <Grid
+        item
+        xs={12}
+        lg={4}
+        // style={{ display: "flex", marginBottom: "30px" }}
+      >
         <img
           className={classes.poster}
           src={`https://image.tmdb.org/t/p/original${data.poster_path}`}
@@ -102,7 +107,7 @@ const MovieInformation = () => {
           <Typography variant="h6" align="center" gutterBottom>
             {data?.runtime}min
             {data?.spoken_languages.length > 0
-              ? `/ ${data?.spoken_languages[0].name}`
+              ? ` | ${data?.spoken_languages[0].name}`
               : ""}
           </Typography>
         </Grid>
