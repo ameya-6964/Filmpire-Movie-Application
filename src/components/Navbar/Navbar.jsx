@@ -1,5 +1,5 @@
 /* eslint-disable import/no-cycle */
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import {
@@ -25,6 +25,7 @@ import { Sidebar } from "..";
 import Search from "../Search/Search";
 import { fetchToken, createSessionId, moviesApi } from "../../utils";
 import { setUser, userSelector } from "../../features/auth";
+import { ColorModeContext } from "../../utils/ToggleColorMode";
 
 const Navbar = () => {
   const classes = useStyles();
@@ -35,6 +36,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const token = localStorage.getItem("request_token");
   const sessionIdFromLocalStorage = localStorage.getItem("session_id");
+  const colorMode = useContext(ColorModeContext);
 
   useEffect(() => {
     const logInUser = async () => {
@@ -71,7 +73,11 @@ const Navbar = () => {
               <Menu />
             </IconButton>
           )}
-          <IconButton color="inherit" sx={{ ml: 1 }} onClick={() => {}}>
+          <IconButton
+            color="inherit"
+            sx={{ ml: 1 }}
+            onClick={colorMode.toggleColorMode}
+          >
             {theme.palette.mode === "dark" ? <Brightness7 /> : <Brightness4 />}
           </IconButton>
           {!isMobile && <Search />}

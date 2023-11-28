@@ -120,6 +120,14 @@ const MovieInformation = () => {
     );
   }
 
+  if (isRecommendationsFetching) {
+    return (
+      <Box display="flex" justifyContent="center" alignItems="center">
+        <CircularProgress size="8rem" />
+      </Box>
+    );
+  }
+
   return (
     <Grid container className={classes.containerSpaceAround}>
       <Grid item sm={12} lg={4}>
@@ -275,13 +283,23 @@ const MovieInformation = () => {
         </Grid>
       </Grid>
       <Box marginTop="5rem" width="100%">
-        <Typography variant="h3" gutterBottom align="center">
-          You might also like
+        <Typography variant="h6" gutterBottom align="center">
+          Because You Cliked On <em>{data?.title}</em>
         </Typography>
-        {recommendations ? (
+        <Typography
+          variant="h3"
+          style={{ marginTop: "2rem" }}
+          gutterBottom
+          align="center"
+        >
+          You Might Also Like
+        </Typography>
+        {recommendations?.results?.length !== 0 ? (
           <MovieList movies={recommendations} numberOfMovies={12} />
         ) : (
-          <Box>Sorry, nothing was found.</Box>
+          <Typography variant="h6" gutterBottom align="center">
+            Sorry Nothing Was Found For Recommendations
+          </Typography>
         )}
       </Box>
       <Modal
