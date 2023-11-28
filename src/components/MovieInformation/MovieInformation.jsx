@@ -267,7 +267,7 @@ const MovieInformation = () => {
             className={classes.video}
             title="Trailer"
             src={`https://www.youtube.com/embed/${data.videos.results[0].key}`}
-            // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
             allowFullScreen
           />
         )}

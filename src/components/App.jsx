@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/profile/:id">
             <Profile />
           </Route>
-          <Route path="/actor/:id">
+          <Route path="/actors/:id">
             <Actors />
           </Route>
         </Switch>
