@@ -70,7 +70,7 @@ export default makeStyles((theme) => ({
     height: "50%",
     [theme.breakpoints.down("sm")]: {
       width: "90%",
-      height: "90%",
+      height: "50%",
     },
   },
 }));

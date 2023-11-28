@@ -55,6 +55,7 @@ const Navbar = () => {
     };
     logInUser();
   }, [token]);
+
   return (
     <>
       <AppBar position="fixed">
@@ -87,7 +88,7 @@ const Navbar = () => {
                 className={classes.linkButton}
                 onClick={() => {}}
               >
-                {!isMobile && <> My Movies &nbsp;</>}
+                {!isMobile && <> {user?.username} &nbsp;</>}
                 <Avatar
                   style={{ width: "30px", height: "30px" }}
                   alt="Profile"
