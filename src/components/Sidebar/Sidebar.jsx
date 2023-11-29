@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import {
   Divider,
   List,
-  ListItem,
   ListItemText,
   ListSubheader,
   ListItemIcon,
@@ -48,6 +47,10 @@ const Sidebar = ({ setMobileOpen }) => {
 
   const redLogo =
     "https://fontmeme.com/permalink/210930/6854ae5c7f76597cf8680e48a2c8a50a.png";
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [genreIdOrCategoryName]);
 
   return (
     <>

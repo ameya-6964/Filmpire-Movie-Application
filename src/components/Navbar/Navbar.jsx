@@ -37,7 +37,7 @@ const Navbar = () => {
   const token = localStorage.getItem("request_token");
   const sessionIdFromLocalStorage = localStorage.getItem("session_id");
   const colorMode = useContext(ColorModeContext);
-
+  console.log(user);
   useEffect(() => {
     const logInUser = async () => {
       if (token) {
@@ -98,7 +98,7 @@ const Navbar = () => {
                 <Avatar
                   style={{ width: "30px", height: "30px" }}
                   alt="Profile"
-                  src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                  src={`https://secure.gravatar.com/avatar/${user?.avatar?.gravatar?.hash}`}
                 />
               </Button>
             )}
