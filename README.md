@@ -1,6 +1,7 @@
 # Technology Stack
 
 Filmpire is built using a cutting-edge technology stack that ensures a seamless and enjoyable movie-watching experience. Here's a breakdown of the key technologies employed in the development of Filmpire:
+https://filmpire-ameya.netlify.app/
 
 ## 1. React
 
