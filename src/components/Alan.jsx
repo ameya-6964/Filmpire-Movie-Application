@@ -47,6 +47,7 @@ const useAlan = () => {
         } else if (command === "logout") {
           localStorage.clear();
           history.push("/");
+          window.location.reload();
         } else if (command === "search") {
           dispatch(searchMovie(query));
         }
