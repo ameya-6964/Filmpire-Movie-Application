@@ -8,7 +8,7 @@ const Movie = ({ movie, i }) => {
   const classes = useStyles();
 
   return (
-    <Grid item xs={12} sm={6} md={4} lg={3} xl={3} className={classes.movie}>
+    <Grid item xs={12} sm={6} md={3} lg={3} xl={3} className={classes.movie}>
       <Grow in key={i} timeout={(i + 1) * 350}>
         <Link className={classes.links} to={`/movie/${movie.id}`}>
           {movie.poster_path ? (
